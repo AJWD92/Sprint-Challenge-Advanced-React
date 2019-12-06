@@ -23,7 +23,7 @@ export class PlayerComponent extends Component {
 
     render() {
         return (
-            <div>
+            <div data-testid='player-card'>
                 {this.state.players.map(player => <PlayerCard player={player} key={player.id} />)}
             </div>
         )

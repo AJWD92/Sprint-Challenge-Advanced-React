@@ -24,8 +24,8 @@ const PlayerCard = props => {
     return (
         <Card className={classes.card}>
             <CardContent>
-                <Typography className={classes.content} component='h1'>Player Name: {props.player.name}</Typography>
-                <Typography className={classes.content} component='h2'>Player Country: {props.player.country}</Typography>
+                <Typography className={classes.content} data-testid='player-name' component='h1'>Player Name: {props.player.name}</Typography>
+                <Typography className={classes.content} data-testid='player-country' component='h2'>Player Country: {props.player.country}</Typography>
                 <Typography className={classes.content} component='p'>Searches: {props.player.searches}</Typography>
             </CardContent>
         </Card>
