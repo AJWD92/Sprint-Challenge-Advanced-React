@@ -1,17 +1,21 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import App from './App.js';
 
-test('renders without crashing', () => {
-  render(<App />, div);
+test('App renders without crashing', () => {
+  render(<App/>);
 });
 
-test('The player name, and country are rendered as well as the data card container is rendered', () => {
-  const { getByTestID } = render(<App />);
+test('both scoreboards are rendered', () => {
+  const { getByTestId} = render(<App />);
 
-  getByTestID(/player-name/i)
-  getByTestID(/player-country/i)
-  getByTestID(/player-card/i)
-  
+  getByTestId(/player-card/i);
+  getByTestId(/player-country/i);
+  getByTestId(/player-name/i);
 })
 
+test('down display is rendered', () => {
+  const { getByText } = render(<App />);
+
+  getByText('Down');
+})
