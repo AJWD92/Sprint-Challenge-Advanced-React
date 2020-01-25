@@ -11,7 +11,7 @@ const useStyles = makeStyles({
         width: '60%',
         background: primaryColor,
         boxShadow: '5 8 5 #000',
-        margin: '0 auto'
+        margin: '1% auto'
     },
 
     content: {
