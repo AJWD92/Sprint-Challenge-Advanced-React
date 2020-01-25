@@ -31,3 +31,18 @@
     transform: rotate(360deg);
   }
 }
+
+.dark-mode {
+  background: #000;
+  color: #95d600;
+}
+
+button {
+  border: 1px solid #000;
+  background: #95d600;
+  padding: 5px 30px;
+  border-radius: 5px;
+  display: block;
+  margin: 2% auto;
+}
+
